@@ -1,0 +1,124 @@
+#contact{
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+#contact img{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  object-fit: cover;
+  z-index: -1;
+}
+
+#contact::after{
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  position: absolute;
+  opacity: 0.3;
+}
+
+#contact h2{
+  font-size: 1.5rem;
+  text-align: center;
+  color: var(--lightcolor1);
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 25px;
+}
+
+#contact form{
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+#contact form .contact-container{
+  position: absolute;
+  z-index: 1;
+}
+
+#contact form .contact-container input{
+  width: 100%;
+  margin-bottom: 20px;
+  height: 40px;
+  border-radius: 40px;
+}
+
+#contact form .contact-container textarea{
+  width: 100%;
+  border-radius: 10px;
+}
+
+#contact form .contact-container input,
+#contact form .contact-container textarea{
+  box-shadow: inherit 15px 20px 15px 0px black;
+  padding: 10px;
+  text-align: center;
+  background-color: rgba(0,0,0,0.3);
+  color: var(--lightcolor2);
+  font-size: 1.3rem;
+  font-weight: bold;
+  border: 2px dashed var(--lightcolor1);
+}
+
+#contact form .contact-container input::placeholder,
+#contact form .contact-container textarea::placeholder{
+  color: var(--lightcolor3);
+}
+
+#contact form .contact-container button{
+  min-width: 100px;
+  width: 20%;
+  height: 40px;
+  border: none;
+  border-radius: 40px;
+  box-shadow: inset 0 0 15px 10px var(--lightcolor2);
+  color: var(--lightcolor1);
+  font-size: 1.2rem;
+  font-weight: bolder;
+  text-transform: uppercase;
+  background-color: transparent;
+  float: right;
+}
+
+#contact #social-links{
+  width: 100%;
+  position: absolute;
+  bottom: 25px;
+  z-index: 2;
+}
+
+#contact #social-links ul{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#contact #social-links ul a{
+  font-size: 3rem;
+  color: var(--lightcolor3);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 769px){
+  #contact{
+    height: 600px !important;
+  }
+  #contact form{
+    margin-top: 40px !important;
+  }
+  #contact form .contact-container{
+    width: 100% !important;
+  }
+}

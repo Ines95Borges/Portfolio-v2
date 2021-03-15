@@ -1,0 +1,101 @@
+#navbar{
+  width: 100vw;
+  height: 10vh;
+  position: fixed;
+  display: flex;
+  flex-grow: 1;
+  top: 0;
+  left: 0;
+  background-color: var(--lightcolor1);
+  padding: 10px;
+  opacity: 0.7;
+  z-index: 50;
+  transition: all 0.5s linear;
+}
+
+#navbar:hover{
+  opacity: 1;
+}
+
+#navbar .dropdown{
+  position: relative;
+  display: none;
+  margin: auto;
+  padding: 0;
+}
+
+#navbar .dropdown #hamburger{
+  width: 8vh;
+  height: 8vh;
+  border: none;
+  background-color: transparent;
+  color: var(--darkcolor1);
+  font-size: 1.3rem;
+}
+
+#navbar .dropdown .dropdown-content{
+  position: absolute;
+  display: none;
+  width: 100vw;
+  background-color: var(--lightcolor2);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  transform: translateX(-43vw);
+  border-radius: 0 0 10px 10px;
+  z-index: 6;
+}
+
+#navbar .dropdown .dropdown-content li{
+  list-style: '🤓';
+  margin-left: 20px;
+}
+
+#navbar .dropdown .dropdown-content li a{
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+#navbar .desktop{
+  background-image: linear-gradient(var(--lightcolor2), var(--lightcolor3), var(--lightcolor2));
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  border: 5px solid var(--lightcolor3);
+}
+
+#navbar .desktop li{
+  display: inline;
+  padding: 10px;
+  cursor: pointer;
+}
+
+#navbar .desktop li a{
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: var(--darkcolor1);
+}
+
+#navbar .desktop li a:hover{
+  border-bottom: 3px dashed var(--darkcolor2);
+}
+
+#navbar .desktop li a .active{
+  border-bottom: 3px dashed var(--darkcolor2);
+}
+
+#navbar .desktop li:first-child,
+#navbar .desktop li:last-child{
+  margin-left: auto;
+}
+
+@media screen and (max-width: 769px){
+  .dropdown{
+    display: inline-block !important;
+  }
+  .desktop{
+    display: none !important;
+  }
+}

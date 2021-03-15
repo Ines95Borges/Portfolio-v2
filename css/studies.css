@@ -1,0 +1,66 @@
+#studies{
+  width: 100%;
+  padding: 5%;
+  min-height: 100vh;
+}
+
+#studies h2{
+  color: var(--darkcolor1);
+  font-size: 2rem;
+}
+
+#studies .certificate-coursera{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 5%;
+  border-bottom: 3px dashed var(--lightcolor3);
+}
+
+#studies .certificate-coursera .icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#studies .certificate-coursera .icon i{
+  font-size: 3rem;
+  color: var(--lightcolor1);
+  margin-right: 20px;
+}
+
+#studies .certificate-coursera .icon h3{
+  width: 100%;
+  font-size: 3rem;
+  text-align: center;
+  color: var(--lightcolor1);
+}
+
+#studies .certificate-coursera a{
+  font-size: 3rem;
+  text-decoration: none;
+  color: var(--lightcolor2);
+  transition: text-shadow 0.5s linear;
+}
+
+#studies .certificate-coursera a:visited{
+  color: var(--darkcolor2);
+}
+
+#studies .certificate-coursera a:hover{
+  text-shadow: 5px 5px var(--lightcolor3);
+}
+
+@media screen and (max-width: 769px){
+  #studies h2{
+    font-size: 1rem !important;
+  }
+  #studies .certificate-coursera .icon i{
+    font-size: 1rem !important;
+  }
+  #studies .certificate-coursera .icon h3{
+    font-size: 1rem !important;
+  }
+}

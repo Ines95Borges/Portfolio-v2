@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+@import './nav.css';
+@import './hero.css';
+@import './chooseTheme.css';
+@import './aboutMe.css';
+@import './projects.css';
+@import './experience.css';
+@import './studies.css';
+@import './contact.css';
+@import './themeDark.css';
+
+:root{
+  --lightcolor1: #399cbd;
+  --lightcolor2: #ffb6c1;
+  --lightcolor3: #aaaaaa;
+  --bgcolor: #fff;
+  --darkcolor1: #0000ff;
+  --darkcolor2: #ff006a;
+  --orbitron-font: "Orbitron", "Times New Roman", sans-serif;
+  --fontSize: 1.3rem;
+  --spaceBetweenSections: 50px;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  width: 100%;
+  font-family: var(--orbitron-font);
+  overflow-x: hidden;
+  transition: all 1s linear;
+  background-color: var(--bgcolor);
+}
+body::-webkit-scrollbar{
+  width: 15px;
+}
+body::-webkit-scrollbar-track{
+  border-radius: 20px;
+  background-color: var(--lightcolor2);
+}
+body::-webkit-scrollbar-thumb{
+  border-radius: 20px;
+  background-color: var(--darkcolor2);
+}
+
+section{
+  position: relative;
+  top: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: var(--spaceBetweenSections) 0px 0px 0px;
+  padding: 0px 10px;
+  padding-bottom: var(--spaceBetweenSections);
+  border-bottom: 5px solid var(--lightcolor3);
+}
+
+button {
+  cursor: pointer;
+}
+button:hover{
+  border: 5px solid;
+  border-image: linear-gradient(var(--lightcolor1), var(--lightcolor2), var(--lightcolor3));
+}
+
+footer {
+  position: absolute;
+  bottom: -10vh;
+  color: var(--lightcolor3);
+}
+
+
+

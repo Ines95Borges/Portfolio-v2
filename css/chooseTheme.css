@@ -1,0 +1,23 @@
+#theme-color h3{
+  width: 100%;
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: var(--fontSize);
+  color: var(--darkcolor1);
+}
+
+#theme-color div{
+  display: inline;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 3px solid var(--darkcolor2);
+  margin: 0px 20px;
+  cursor: pointer;
+  transform: rotate3d(0,0,0,0deg);
+  transition: transform 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+#theme-color div:hover{
+  transform: rotate3d(1,0,0, 180deg);
+}

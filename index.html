@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Inês Barata Feio Borges">
+  <meta name="description" content="Inês Barata Feio Borges Portfólio Website">
+  <meta name="keywords" content="Inês Barata Feio Borges Portfólio Website">
+  <title>Inês Borges's Portfolio Website</title>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="./css/main.css">
+  <script src="./js/main.js" defer></script>
+  <script src="./js/themes.js" defer></script>
+</head>
+<body>
+  
+  <header>
+    <!--Navigation Bar-->
+    <nav id="navbar">
+      <div class="dropdown">
+        <button id="hamburger"><i class="fas fa-arrow-circle-down"></i></button>
+        <ul class="dropdown-content">
+          <li><a class="dropdown-item active" href="#hero">Home</a></li>
+          <li><a class="dropdown-item" href="#about-me">About me</a></li>
+          <li><a class="dropdown-item" href="#projects">Projects</a></li>
+          <li><a class="dropdown-item" href="#experience">Experience</a></li>
+          <li><a class="dropdown-item" href="#studies">Academic formation</a></li>
+          <li><a class="dropdown-item" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <ul class="desktop">
+        <li><a class="active" href="#hero">Home</a></li>
+        <li><a href="#about-me">About me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#studies">Academic formation</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <!--End of Navigation Bar-->
+
+    <!--Hero-->
+    <div id="hero">
+      <picture>
+        <source media="(min-width: 769px)" srcset="./images/foto_portfolio.png" alt="me">
+        <img src="./images/foto_portfolio300.png" alt="me">
+      </picture>
+      <div id="header-contact">
+        <h3>inesbarataborges@gmail.com</h3>
+        <h3>+351 910 182 440</h3>
+      </div>
+      <div id="header-content">
+        <h2>Inês's Portfolio Website</h2>
+        <button id="header-button"><a href="#contact">Hire me!</a></button>
+      </div>
+    </div>
+    <!--End of Hero-->
+  </header>
+
+  <main>
+    <!-- Theme color section-->
+    <section id="theme-color">
+      <h3>Choose the theme</h3>
+      <div class="circle-dark" style="background-color: #0e1111;"></div>
+      <div class="circle-violet" style="background-color: #FF0099;"></div>
+      <div class="circle-white" style="background-color: white;"></div>
+    </section>
+    <!--End of Theme color section-->
+
+    <!-- About me section-->
+    <section id="about-me">
+      <img src="./images/hufflepuff.png" alt="" id="hufflepuff-image">
+      <p>Hello, I'm Inês Borges. I am <span id="myAge"></span> years old and I live in Guimarães, Portugal. I like to watch videos on youtube and the colour blue. I am studying to become a Full Stack Developer.</p>
+    </section>
+    <!--End of About me section-->
+
+    <!-- Projects section-->
+    <section id="projects">
+      <h2 id="project-title">Projects developed by me</h2>
+      <div class="project-container">
+        <a href="http://fantasticbeasts.us.to/" target="_blank"><img src="./images/fantasticbeasts.png" alt="Website Zoo Fantastic Beasts"></a>
+        <div class="technology-container">
+          <h4>Used technologies</h4>
+          <ul>
+            <li>HTML5</li>
+            <li>JAVASCRIPT</li>
+            <li>SASS</li>
+            <li>JQUERY</li>
+            <li>AJAX</li>
+            <li>PHP7</li>
+            <li>MYSQL</li>
+            <li>BOOTSTRAP5</li>
+            <li>APIS</li>
+            <li>A11Y</li>
+          </ul>
+        </div>
+      </div>
+      <div class="project-container">
+        <a href="https://techquiz2021.netlify.app/" target="_blank"><img src="./images/techquiz.png" alt="Game TechQuiz"></a>
+        <div class="technology-container switch-order">
+          <h4>Used technologies</h4>
+          <ul>
+            <li>HTML5</li>
+            <li>JAVASCRIPT</li>
+            <li>PWA</li>
+            <li>SASS</li>
+          </ul>
+        </div>
+      </div>
+      <div class="project-container">
+        <a href="https://100blocks.netlify.app/" target="_blank"><img src="./images/100blocks.png" alt="Game 100Blocks"></a>
+        <div class="technology-container">
+          <h4>Used technologies</h4>
+          <ul>
+            <li>HTML5</li>
+            <li>JAVASCRIPT</li>
+            <li>PWA</li>
+            <li>CSS3</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!--End of Projects section-->
+
+    <!-- Experience section-->
+    <section id="experience">
+      <h2>My skills</h2>
+      <ul>
+        <li>
+          <div>HTML5</div>
+          <span class="mark"></span>
+          <span class="mark"></span>
+          <span class="mark"></span>
+          <span class="mark"></span>
+          <span class="mark"></span>
+          <span class=""></span>
+          <span class=""></span>
+          <span class=""></span>
+          <span class=""></span>
+          <span class=""></span>
+        </li>
+        <li>
+          <div>CSS3</div>
+          <span class="mark"></span>
+          <span class="mark"></span>
+          <span class="mark"></span>
+          <span class="mark"></span>
+          <span class=""></span>
+          <span class=""></span>
+          <span class=""></span>
+          <span class=""></span>
+          <span class=""></span>
+          <span class=""></span>
+        </li>
+        <li>
+          <div>JAVASCRIPT</div>
+          <span class="mark"></span>
+          <span class="mark"></span>
+          <span class="mark"></span>
+          <span class=""></span>
+          <span class=""></span>
+          <span class=""></span>
+          <span class=""></span>
+          <span class=""></span>
+          <span class=""></span>
+          <span class=""></span>
+        </li>
+        <li>
+          <div>PHP</div>
+          <span class="mark"></span>
+          <span class="mark"></span>
+          <span class="mark"></span>
+          <span class=""></span>
+          <span class=""></span>
+          <span class=""></span>
+          <span class=""></span>
+          <span class=""></span>
+          <span class=""></span>
+          <span class=""></span>
+        </li>
+
+        <li>
+          <div>SQL</div>
+          <span class="mark"></span>
+          <span class="mark"></span>
+          <span class=""></span>
+          <span class=""></span>
+          <span class=""></span>
+          <span class=""></span>
+          <span class=""></span>
+          <span class=""></span>
+          <span class=""></span>
+          <span class=""></span>
+        </li>
+        <li>
+          <div>BOOTSTRAP 5</div>
+          <span class="mark"></span>
+          <span class="mark"></span>
+          <span class="mark"></span>
+          <span class="mark"></span>
+          <span class="mark"></span>
+          <span class=""></span>
+          <span class=""></span>
+          <span class=""></span>
+          <span class=""></span>
+          <span class=""></span>
+        </li>
+        <li>
+          <div>PWA</div>
+          <span class="mark"></span>
+          <span class="mark"></span>
+          <span class="mark"></span>
+          <span class="mark"></span>
+          <span class=""></span>
+          <span class=""></span>
+          <span class=""></span>
+          <span class=""></span>
+          <span class=""></span>
+          <span class=""></span>
+        </li>
+        <li>
+          <div>PYTHON</div>
+          <span class="mark"></span>
+          <span class="mark"></span>
+          <span class="mark"></span>
+          <span class=""></span>
+          <span class=""></span>
+          <span class=""></span>
+          <span class=""></span>
+          <span class=""></span>
+          <span class=""></span>
+          <span class=""></span>
+        </li>
+        <li>
+          <div>TEAMWORK</div>
+          <span class="mark"></span>
+          <span class="mark"></span>
+          <span class="mark"></span>
+          <span class="mark"></span>
+          <span class="mark"></span>
+          <span class="mark"></span>
+          <span class="mark"></span>
+          <span class="mark"></span>
+          <span class=""></span>
+          <span class=""></span>
+        </li>
+        <li>
+          <div>COMMUNICATION SKILLS</div>
+          <span class="mark"></span>
+          <span class="mark"></span>
+          <span class="mark"></span>
+          <span class="mark"></span>
+          <span class="mark"></span>
+          <span class="mark"></span>
+          <span class="mark"></span>
+          <span class=""></span>
+          <span class=""></span>
+          <span class=""></span>
+        </li>
+        <li>
+          <div>ENGLISH</div>
+          <span class="mark"></span>
+          <span class="mark"></span>
+          <span class="mark"></span>
+          <span class="mark"></span>
+          <span class="mark"></span>
+          <span class="mark"></span>
+          <span class="mark"></span>
+          <span class="mark"></span>
+          <span class="mark"></span>
+          <span class=""></span>
+        </li>
+        <li>
+          <div>GIT & GITHUB</div>
+          <span class="mark"></span>
+          <span class="mark"></span>
+          <span class="mark"></span>
+          <span class="mark"></span>
+          <span class=""></span>
+          <span class=""></span>
+          <span class=""></span>
+          <span class=""></span>
+          <span class=""></span>
+          <span class=""></span>
+        </li>
+        <li>
+          <div>COOPERATIVE</div>
+          <span class="mark"></span>
+          <span class="mark"></span>
+          <span class="mark"></span>
+          <span class="mark"></span>
+          <span class="mark"></span>
+          <span class="mark"></span>
+          <span class="mark"></span>
+          <span class="mark"></span>
+          <span class=""></span>
+          <span class=""></span>
+        </li>
+        <li>
+          <div>PROBLEM-SOLVER</div>
+          <span class="mark"></span>
+          <span class="mark"></span>
+          <span class="mark"></span>
+          <span class="mark"></span>
+          <span class="mark"></span>
+          <span class="mark"></span>
+          <span class="mark"></span>
+          <span class="mark"></span>
+          <span class=""></span>
+          <span class=""></span>
+        </li>
+        <li>
+          <div>MOTIVATED</div>
+          <span class="mark"></span>
+          <span class="mark"></span>
+          <span class="mark"></span>
+          <span class="mark"></span>
+          <span class="mark"></span>
+          <span class="mark"></span>
+          <span class="mark"></span>
+          <span class="mark"></span>
+          <span class="mark"></span>
+          <span class="mark"></span>
+        </li>
+        <li>
+          <div>HARD-WORKING</div>
+          <span class="mark"></span>
+          <span class="mark"></span>
+          <span class="mark"></span>
+          <span class="mark"></span>
+          <span class="mark"></span>
+          <span class="mark"></span>
+          <span class="mark"></span>
+          <span class="mark"></span>
+          <span class=""></span>
+          <span class=""></span>
+        </li>
+        <li>
+          <div>ORGANISED</div>
+          <span class="mark"></span>
+          <span class="mark"></span>
+          <span class="mark"></span>
+          <span class="mark"></span>
+          <span class="mark"></span>
+          <span class="mark"></span>
+          <span class="mark"></span>
+          <span class=""></span>
+          <span class=""></span>
+          <span class=""></span>
+        </li>
+      </ul>
+    </section>
+    <!--End of Experience section-->
+
+    <!-- Studies section-->
+    <section id="studies">
+      <h2>My courses and certifications</h2>
+      <div class="certificate-coursera">
+        <div class="icon">
+          <i class="fas fa-certificate"></i>
+          <h3>Git & Github</h3>
+        </div>
+        <a href="https://coursera.org/share/2a041554dc3f330b78e9f323027d6b8b" target="_blank">See certificate</a>
+      </div>
+
+      <div class="certificate-coursera">
+        <div class="icon">
+          <i class="fas fa-certificate"></i>
+          <h3>Web development</h3>
+        </div>
+        <a href="https://coursera.org/share/26b54acefe0eae5561b5210e4b469846" target="_blank">See certificate</a>
+      </div>
+    </section>
+    <!--End of Studies section-->
+
+    <!-- Contact section-->
+    <section id="contact">
+      <img src="./images/contact.jpg" alt="">
+      <h2>Contact me</h2>
+      <form action="https://formsubmit.co/inesbarataborges@gmail.com" method="POST">
+        <div class="contact-container" style="left: 50%; transform: translateX(-50%); padding: 10% 0;">
+          <input type="email" name="email" placeholder="Email Address" required>
+          <textarea name="message" cols="30" rows="10" placeholder="Write your message here" required></textarea>
+          <input type="hidden" name="_subject" value="New email!">
+          <button type="submit">Send</button>
+        </div>
+      </form>
+      <div id="social-links">
+        <ul>
+          <li><a href="https://github.com/Ines95Borges" target="_blank"><i class="fab fa-github"></i></a></li>
+          <li><a href="https://www.facebook.com/inesbarataborges" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/inesbfb/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+        </ul>
+      </div>
+    </section>
+    <!--End of Contact section-->
+  </main>
+
+  <footer>
+    <small>Copyright&copy; <script>document.write(new Date().getFullYear())</script> Inês Borges All rights reserved </small>
+  </footer>
+</body>
+</html>

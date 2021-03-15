@@ -1,0 +1,24 @@
+#about-me{
+  height: 100vh;
+  position: relative;
+}
+#about-me #hufflepuff-image{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  opacity: 0.7;
+}
+#about-me p{
+  position: absolute;
+  padding: 0 4vw 0 4vw;
+  font-size: 50px;
+  color: var(--darkcolor1);
+  text-shadow: 3px 3px 6px black;
+  background-color: rgba(228, 177, 37, 0.5);
+}
+
+@media screen and (max-width: 769px){
+  #about-me p{
+    font-size: 1.5rem !important;
+  }
+}

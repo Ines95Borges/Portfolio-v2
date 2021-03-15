@@ -1,0 +1,47 @@
+#experience {
+  padding: 5%;
+  width: 100%;
+  height: 100vh;
+}
+
+#experience h2{
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--darkcolor1);
+  margin-bottom: 50px;
+}
+
+#experience ul{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 250px));
+  grid-gap: 30px;
+  justify-content: center;
+}
+
+#experience ul li{
+  list-style: '👉  ';
+}
+
+#experience ul li div{
+  font-size: 1.2rem;
+  color: var(--darkcolor1);
+}
+
+#experience ul li span{
+  font-size: 0;
+  border: 8px solid var(--lightcolor3);
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+#experience ul li .mark{
+  font-size: 0;
+  border: 8px solid var(--darkcolor2);
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+@media screen and (max-width: 769px){
+  #experience{
+    height: 100% !important;
+  }
+}
